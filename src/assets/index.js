@@ -14,6 +14,9 @@ import blog3 from './blog3.png'
 import feedback1 from './feedback1.png'
 import feedback2 from './feedback2.png'
 import feedback3 from './feedback3.png'
+import facebookLogo from './logos/facebookLogo.svg'
+import twitterLogo from './logos/twitterLogo.svg'
+import instgramLogo from './logos/instgramLogo.svg'
 
 export {
   student,
@@ -31,5 +34,8 @@ export {
   blog3,
   feedback1,
   feedback2,
-  feedback3
+  feedback3,
+  facebookLogo,
+  twitterLogo,
+  instgramLogo
 }
