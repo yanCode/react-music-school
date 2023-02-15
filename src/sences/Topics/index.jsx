@@ -5,7 +5,7 @@ import {useState} from "react";
 export const Topics = () => {
   const [currentImage, setCurrentImage] = useState(topic_01);
   return (<section id="topics" className="background-black">
-    <div className='topic__wrapper'>
+    {/*<div className='topic__wrapper'>*/}
       <div className="wrapper">
         <h2>What will you learn?</h2>
         <div className='content__container'>
@@ -23,6 +23,6 @@ export const Topics = () => {
         </div>
         <img src={yellowCorner} alt="right corner" className='yellow-bg-corner'/>
       </div>
-    </div>
+    {/*</div>*/}
   </section>)
 }

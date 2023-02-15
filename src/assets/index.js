@@ -11,6 +11,9 @@ import redCorner from './red_corner.svg'
 import blog1 from './blog1.png'
 import blog2 from './blog2.png'
 import blog3 from './blog3.png'
+import feedback1 from './feedback1.png'
+import feedback2 from './feedback2.png'
+import feedback3 from './feedback3.png'
 
 export {
   student,
@@ -25,5 +28,8 @@ export {
   redCorner,
   blog1,
   blog2,
-  blog3
+  blog3,
+  feedback1,
+  feedback2,
+  feedback3
 }
