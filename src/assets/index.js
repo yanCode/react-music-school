@@ -8,6 +8,9 @@ import topic_04 from './topics/04.png';
 import topic_05 from './topics/05.png';
 import yellowCorner from './yellow_corner.svg'
 import redCorner from './red_corner.svg'
+import blog1 from './blog1.png'
+import blog2 from './blog2.png'
+import blog3 from './blog3.png'
 
 export {
   student,
@@ -19,5 +22,8 @@ export {
   topic_04,
   topic_05,
   yellowCorner,
-  redCorner
+  redCorner,
+  blog1,
+  blog2,
+  blog3
 }

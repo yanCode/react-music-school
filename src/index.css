@@ -64,6 +64,9 @@ section h2::after {
     bottom: -4px;
 
 }
+.light::after{
+    background: var(--yellow-color);
+}
 
 .background-black {
     background: black;
