@@ -1,0 +1,32 @@
+.nav__bar {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px);
+    width: 1024px;
+    /* Note: backdrop-filter has minimal browser support */
+    /*height: 80px;*/
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 19px 32px;
+
+}
+
+.nav__bar ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    padding: 0;
+}
+
+.nav__bar ul > li > a, a.logo {
+    color: white;
+    font-family: 'Inter', serif;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+a.logo .red {
+    color: red;
+}
