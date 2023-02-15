@@ -1,0 +1,54 @@
+#topics .content__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin-top: 1rem;
+}
+
+#topics .topic__image img {
+    width: 558px;
+    height: 287px;
+    object-fit: cover;
+}
+
+#topics .topic__list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0 2rem;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+#topics .topic__list > li {
+    position: relative;
+    font-family: 'Alegreya', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#topics .topic__list > li::before {
+    content: " ";
+    position: absolute;
+    background: var(--red-color);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    left: -24px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#topics .wrapper {
+    position: relative;
+
+}
+
+#topics .yellow-bg-corner {
+    position: absolute;
+    bottom: -6px;
+    right: -6px;
+}

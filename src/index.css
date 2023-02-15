@@ -6,29 +6,73 @@
     --pink-color: #FF6864;
     --yellow-color: #FFCA28;;
 }
-html,body {
-    height:100%;
+
+html, body {
+    height: 100%;
 }
+
 *,
 *::after,
-*::before{
+*::before {
     box-sizing: border-box;
 }
+
 a {
     text-decoration: none;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
     font-family: "Inter", sans-serif;
 }
-.wrapper{
+
+.wrapper {
     max-width: 1024px;
     margin: 0 auto;
 
 }
-#root{
+
+#root {
     height: 100%;
     display: flex;
     flex-direction: column;
+}
+
+section {
+    padding: 80px 0;
+    color: #FFFFFF;
+}
+
+section h2 {
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    margin: 0;
+    position: relative;
+}
+
+section h2::after {
+    content: " ";
+    width: 80px;
+    height: 4px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+
+}
+
+.background-black {
+    background: black;
+}
+
+.background-dark-grey {
+    background: var(--dark-color);
+}
+
+.background-pink {
+    background: var(--pink-color);
 }
