@@ -71,11 +71,17 @@ a.logo .red {
         left: 0;
         background: var(--dark-color);
         padding: 60px 32px;
+        transform: translateY(-100%);
+        transition: all 800ms cubic-bezier(0.3, 0.96, 0.59, 0.95);
 
     }
 
+    .mobile_menu_container.active {
+        transform: translateY(0);
+    }
+
     .mobile_menu_container .closeIcon {
-       position: fixed;
+        position: fixed;
         background: black;
         border-radius: 50%;
         width: 32px;

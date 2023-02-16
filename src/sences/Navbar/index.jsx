@@ -17,22 +17,22 @@ export const Navbar = () => {
           <li><a href="#">Testimonials</a></li>
         </ul>
         <div className="menuIcon" onClick={() =>
-          setShowMobileMenu(p => !p)}>
+          setShowMobileMenu(true)}>
           <img src={menuIcon} alt="menu icon"/>
         </div>
       </nav>
-      {showMobileMenu && (
-        <div className='mobile_menu_container'>
-          <div className='closeIcon' onClick={()=>setShowMobileMenu(false)}>
-            <img src={closeIcon}/></div>
-          <ul className='menu-items'>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Course Details</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Testimonials</a></li>
-          </ul>
-        </div>
-      )}
+
+      <div className={`mobile_menu_container ${showMobileMenu?'active':''}`}>
+        <div className='closeIcon' onClick={() => setShowMobileMenu(false)}>
+          <img src={closeIcon}/></div>
+        <ul className='menu-items'>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Course Details</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Testimonials</a></li>
+        </ul>
+      </div>
+
     </>
 
   )
