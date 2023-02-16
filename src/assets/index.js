@@ -17,6 +17,8 @@ import feedback3 from './feedback3.png'
 import facebookLogo from './logos/facebookLogo.svg'
 import twitterLogo from './logos/twitterLogo.svg'
 import instgramLogo from './logos/instgramLogo.svg'
+import menuIcon from './menuIcon.svg'
+import closeIcon  from './closeIcon.svg'
 
 export {
   student,
@@ -37,5 +39,7 @@ export {
   feedback3,
   facebookLogo,
   twitterLogo,
-  instgramLogo
+  instgramLogo,
+  menuIcon,
+  closeIcon
 }

@@ -68,4 +68,21 @@ header .cta .demo-button {
     cursor: pointer;
 }
 
+/*tablet version*/
+@media (max-width: 1040px) {
+    header .cta {
+        width: 356px;
+    }
+}
+
+@media (max-width: 720px) {
+    header .cta {
+        right: 32px;
+        left: 32px;
+        width: unset;
+    }
+    header .cta h1 {
+    font-size: 32px;
+}
+}
 

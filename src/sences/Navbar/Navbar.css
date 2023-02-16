@@ -31,3 +31,73 @@
 a.logo .red {
     color: red;
 }
+
+.nav__bar .menuIcon,
+.mobile_menu_container {
+    display: none;
+}
+
+/*tablet version*/
+@media (max-width: 1040px) {
+    .nav__bar {
+        width: 694px;
+    }
+
+}
+
+@media (max-width: 720px) {
+    .nav__bar {
+        width: unset;
+        left: 32px;
+        right: 32px;
+        top: 16px;
+    }
+
+    .nav__bar .menu-content {
+        display: none;
+    }
+
+    .nav__bar .menuIcon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .mobile_menu_container {
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        z-index: 4;
+        right: 0;
+        left: 0;
+        background: var(--dark-color);
+        padding: 60px 32px;
+
+    }
+
+    .mobile_menu_container .closeIcon {
+       position: fixed;
+        background: black;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        right: 32px;
+        top: 32px;
+        cursor: pointer;
+    }
+
+    .mobile_menu_container > .menu-items {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .mobile_menu_container li > a {
+        text-decoration: none;
+        color: white;
+        font-family: 'Inter', serif;
+        font-weight: 800;
+        font-size: 16px;
+    }
+}
