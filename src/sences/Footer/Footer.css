@@ -1,11 +1,8 @@
 #footer .content-container {
     display: flex;
-     justify-content: space-between;
+    justify-content: space-between;
 }
 
-.links {
-    /*flex: 1;*/
-}
 
 #footer .social-icons {
     display: flex;
@@ -15,7 +12,6 @@
 
 #footer .copyright {
     font-family: 'Alegreya', serif;
-
     font-weight: 400;
     font-size: 16px;
 }
@@ -31,22 +27,61 @@
 
 #footer .links ul {
     list-style: none;
-    padding: 0;
-    padding-left: 1rem;
+    padding: 0 0 0 1rem;
 }
-#footer .links ul >li{
+
+#footer .links ul > li {
     list-style: none;
     padding: 0;
     margin-bottom: 0.5rem;
 }
 
-#footer .links  a {
+#footer .links a {
     text-decoration: none;
     color: white;
     font-family: 'Alegreya', serif;
     font-weight: 400;
     font-size: 16px;
 }
-#footer .links  a:hover{
+
+#footer .links a:hover {
     text-decoration: underline;
+}
+#footer .copyright.mobile{
+    display: none;
+}
+
+@media (max-width: 720px) {
+    #footer {
+        padding-bottom: 48px;
+    }
+    #footer .content-container {
+        flex-direction: column;
+        gap: 32px;
+
+    }
+
+    #footer .social-icons {
+        margin-bottom: 0;
+    }
+
+    #footer .copyright {
+        display: none;
+    }
+
+    #footer .copyright.mobile {
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    #footer ul {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #footer .links ul > li:last-child {
+        margin-bottom: 0;
+    }
+
 }

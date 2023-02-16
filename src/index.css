@@ -4,7 +4,8 @@
     --dark-color: #181E1E;
     --red-color: #E63946;
     --pink-color: #FF6864;
-    --yellow-color: #FFCA28;;
+    --yellow-color: #FFCA28;
+    --tablet-width: 1040px;
 }
 
 html, body {
@@ -64,7 +65,8 @@ section h2::after {
     bottom: -4px;
 
 }
-.light::after{
+
+.light::after {
     background: var(--yellow-color);
 }
 
@@ -78,4 +80,25 @@ section h2::after {
 
 .background-pink {
     background: var(--pink-color);
+}
+
+@media (max-width: 1040px) {
+    .wrapper {
+        max-width: 694px;
+    }
+}
+
+@media (max-width: 720px) {
+    .wrapper {
+        padding:0 32px;
+
+    }
+    section h2{
+    font-size: 24px;
+    }
+    section h2::after{
+       width: 50px;
+
+    }
+
 }

@@ -1,8 +1,6 @@
 #info .info_container {
     display: flex;
     justify-content: space-between;
-    /*padding-left: 321px;*/
-    /*padding-right: 321px;*/
 }
 
 #info .info-content {
@@ -26,18 +24,40 @@
     font-size: 40px;
 }
 
-#info .info-content .amount {
+#info .info-content .type {
     font-family: 'Alegreya', serif;
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 41px;
 }
-#info .wrapper{
+
+#info .wrapper {
     position: relative;
 }
-#info .red-corner{
+
+#info .red-corner {
     position: absolute;
-    top:-20px;
+    top: -20px;
     left: 0;
+}
+
+@media (max-width: 1040px) {
+  #info .info-content .amount {
+      font-size: 32px;
+  }
+    #info .info-content .type{
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 720px) {
+    #info .info_container {
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    #info .red-corner {
+        left: 32px;
+    }
 }

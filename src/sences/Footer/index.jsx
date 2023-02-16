@@ -42,6 +42,7 @@ export const Footer = () => {
               <li><a href="">+1 999 9999 999</a></li>
             </ul>
           </div>
+         <p className='copyright mobile'>This website is designed by GTCoding Ⓒ 2022</p>
 
         </div>
       </section>
