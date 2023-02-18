@@ -11,10 +11,10 @@ export const Navbar = () => {
           Sound<span className="red">DZign</span>
         </a>
         <ul className='menu-content'>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Course Details</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Testimonials</a></li>
+          <li><a href="#footer">About</a></li>
+          <li><a href="#topics">Course Details</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#feedback">Testimonials</a></li>
         </ul>
         <div className="menuIcon" onClick={() =>
           setShowMobileMenu(true)}>
@@ -25,11 +25,11 @@ export const Navbar = () => {
       <div className={`mobile_menu_container ${showMobileMenu?'active':''}`}>
         <div className='closeIcon' onClick={() => setShowMobileMenu(false)}>
           <img src={closeIcon}/></div>
-        <ul className='menu-items'>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Course Details</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Testimonials</a></li>
+        <ul className='menu-items' onClick={()=>setShowMobileMenu(false)}>
+          <li><a href="#footer">About</a></li>
+          <li><a href="#topics">Course Details</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#feedback">Testimonials</a></li>
         </ul>
       </div>
 
