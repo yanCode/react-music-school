@@ -23,7 +23,7 @@
 
 .nav__bar ul > li > a, a.logo {
     color: white;
-    font-family: 'Inter', serif;
+
     font-weight: 800;
     font-size: 16px;
 }
@@ -102,7 +102,6 @@ a.logo .red {
     .mobile_menu_container li > a {
         text-decoration: none;
         color: white;
-        font-family: 'Inter', serif;
         font-weight: 800;
         font-size: 16px;
     }
